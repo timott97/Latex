@@ -1,0 +1,59 @@
+\documentclass[A4]{scrartcl}
+\usepackage[paper=a4paper,left=10mm,right=10mm,top=25mm,bottom=25mm]{geometry}
+
+\begin{document}
+  \addsec{Thermodynamik Idealer Gase}
+    Ideale Gase:\\
+    Mittlere Kinetische Energie: $E = \frac{3}{2}m_{teilchen}v^2$\\
+    Allg. Gasgleichung: $p\cdot V = N \cdot K_B \cdot T$\\
+    TODO: $ N = \frac{n}{V}$\\
+    Druck: $p = \frac{F}{A}$ \\
+    Gleichverteilungssatz: $E_{kin} = E_{tra} + E{rot} = \frac{f}{2} \cdot K_B \cdot t$\\
+    Barom. Höhenformel: $TODO$\\
+    Energiesatz: $\Delta U = \Delta Q + \Delta W$\\
+    Innere Energie: $U = \frac{f}{2} K_B \cdot T \cdot N$\\
+    \\ 
+    \begin{tabular}{l|l}
+    Isotherme Zustandsänderung:&Isochore Zustandsänderung:\\\\
+    T = const&V = const;\\
+    $\Delta W = -NK_bT ln(\frac{p1}{p2})$&$\Delta W = 0$\\
+    $\Delta Q = -\Delta W = NK_bT ln(\frac{p1}{p2})$&$\Delta Q = \frac{f}{2}NK_b\Delta T = \frac{f}{2}\cdot V \Delta p$\\
+    $\Delta U = 0$&$\Delta U = \frac{f}{2}NK_b\Delta T = \frac{f}{2}\cdot V \Delta p$\\
+    $\Delta S = NK_bln(\frac{p-1}{p_2}$&$\Delta S = \frac{f}{2} NK_b \rightarrow const.$\\\\
+
+    Isobare Zustandsänderung:&Adiabate Zustandsänderung:\\
+    p = const;&$p\cdot V^{\kappa} = const$\\
+    $\Delta W = -p dV = NK_b \Delta T$&$\Delta W = p_1V_1\frac{f}{2}((\frac{V_2}{V_1})^{\frac{f}{2}}-1)$\\
+    $\Delta Q = (\frac{f}{2}-1)p \Delta V$&$\Delta Q = 0$\\
+    $\Delta U = \frac{f}{2}NK_b \Delta T = \frac{f}{2}p \Delta V$&$\Delta U = 0$\\
+    $\Delta S = (\frac{f}{2}-1)p \frac{\Delta V}{T}$&$\Delta S = 0$\\
+    \end{tabular}\\
+    \\\\
+    Wirkungsgrad: $\eta = \frac{P_{ab}}{P_{zu}} = \frac{W_{ab}}{W_{zu}} = \frac{|\Delta W|}{|\Delta Q_h|}$\\
+    Carnot Wirkungsgrad: $\frac{T_h - T_t}{T_h}$\\
+    Entropie: $S = K_bln(W)$,$\Delta S = K_bln(\frac{W_2}{W_1}) = \frac{\Delta Q}{T} $\\
+    Satz v. Stirling: $ln(N!) = N ln(N)$ für $N>>0$
+  \addsec{Thermodynamik Realer Gase}
+    Van der Waals Gleichung: $NK_bT=(P+aN^2\frac{1}{V^2})\cdot(V-Nb)\rightarrow p = \frac{NK_bT}{V-Nb}-\frac{N^2 a}{V^2}$
+    
+  \addsec{Wärmeleitung und Wärmeausdehnung}
+  Wärmekapazität v = const: $c_K=\frac{f}{2}\cdot N_A K_B$\\
+  Wärmekapazität p = const: $c_K=(\frac{f}{2}+1)N_A K_B$\\
+  Wärmestrom: $Q'_{(t)}=q'A = -\lambda\cdot\frac{dT}{dx}$\\
+  Dulong-Petit'sche Regel: $c_K = 3 N_A K_B$\\
+  Wärmeausdehnung linear: $\Delta L = \alpha L \Delta T$\\
+  Wärmeausdehnung Kubisch: $\Delta V = \beta V \Delta T , \beta = 3\alpha$\\
+  Richmannsche Mischungsregel: TODO
+  Richmannsche Mischungsregel mit Wärmemengen:
+
+  \addsec{Wellen}
+   TODO:\\
+  Allg. Wellengleichung:\\
+  Lsg für ebene Wellen im $R^1$: $A_{(x,t)} = A_0\cdot cos(\omega t - k*x_0)$\\
+  $k = \frac{2\pi}{\lambda}$, $\omega = \frac{2\pi}{T}$\\
+  Lsg für ebene Wellen im $R^3$:\\
+  Lsg für Kreiswellen:\\
+  Lsg für Zylinderwellen:\\
+  Lsg für Kugelwellen:\\
+     
+\end{document}
