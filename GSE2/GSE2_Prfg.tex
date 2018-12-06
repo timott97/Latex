@@ -3,6 +3,9 @@
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 
+%SS2017P komplett
+%SS2017 komplett
+
 \begin{document}
   \addsec{Verständnisfragen}
   Welche zwei Parameter bestimmen die Bandbreite einer rückgekoppelten\\ 
@@ -117,15 +120,108 @@
   \\
   Antwort: Bessel, Butterworth, Tschebyscheff, Kritische Dämpfung\\\\
   \addsec {OPV-Schaltungen}
+
+
   Gegeben sei folgende Schaltung:\\
   \includegraphics{Schaltung1.png}\\
   a) Bestimmen Sie die Ausgangsspannung $U_{out}$ als Funktion der gegebenen Größen.\\
   $U_{out} = f(U_1,U_2,U_{os},I_N,I_P)$\\
   b) Vereinfachen sie den Ausdruck für $R_1 = R_3, R_2 = R_4$ und $I_N = I_B + 0.5 I_{OS}, I_P = I_B-0,5I_{OS}$\\\\
+
+  Gegeben sei folgende Schaltung:\\
+  \includegraphics{Schaltung8.png}\\
+  a) Bestimmen Sie die Ausgangsspannung $U_{out}$ als Funktion der gegebenen Größen.\\
+  $U_{out} = f(U_1,U_{OS},I_N,I_P)$\\
+  b) Vereinfachen sie den Ausdruck mittels $I_N = I_B + 0.5 I_{OS}, I_P = I_B-0,5 I_{OS}$.\\
+  Dimensionieren sie $R_3$ so , dass der Einfluss des Eingangsruhestroms auf die Ausgangsspannung minimiert wird.\\\\
+
   Die Aussteuergrenzen sollen mit $\pm 15V$ angenommen werden.\\
-  a) Schreiben sie jweiels die Potentiale bzw. Ströme in die Kästchen:\\
+  a) Schreiben sie jeweils die Potentiale bzw. Ströme in die Kästchen:\\
   \includegraphics{Schaltung2.png}\\\\
-  b) Schreiben sie jweiels die Potentiale bzw. Ströme in die Kästchen:\\
+  b) Schreiben sie jeweils die Potentiale bzw. Ströme in die Kästchen:\\
   \includegraphics{Schaltung3.png}\\\\
-  
+  c) Schreiben sie jeweils die Potentiale bzw. Ströme in die Kästchen:\\
+  \includegraphics{Schaltung4.png}\\\\
+  d) Schreiben sie jeweils die Potentiale bzw. Ströme in die Kästchen:\\
+  \includegraphics{Schaltung5.png}\\\\
+  e) Schreiben sie jeweils die Potentiale bzw. Ströme in die Kästchen:\\
+  \includegraphics{Schaltung9.png}\\\\
+  e) Schreiben sie jeweils die Potentiale bzw. Ströme in die Kästchen:\\
+  \includegraphics{Schaltung10.png}\\\\
+  f) Schreiben sie jeweils die Potentiale bzw. Ströme in die Kästchen:\\
+  \includegraphics{Schaltung11.png}\\\\
+  g) Schreiben sie jeweils die Potentiale bzw. Ströme in die Kästchen:\\
+  \includegraphics{Schaltung12.png}\\\\
+  h) Schreiben sie jeweils die Potentiale bzw. Ströme in die Kästchen:\\
+  \includegraphics{Schaltung13.png}\\\\
+
+  Gegeben sei folgende Schaltung:\\
+  \includegraphics{Schaltung6.png}\\
+  a) Um welche Grundschaltung handelt es sich ?\\
+  b) Leiten Sie die Laplace-Übertragungsfunktion der Schaltung her.\\\\
+  Skizzieren Sie im Folgenden den Verlauf der Augangspannung für eine rechteckförmige Eingangsspannung der Amplitude $\pm 1V$, ein Tastverhältnis von $50\%$ und verschiedene Frequenzen.
+  Berechnen sie die Amplitude/Maximalwerte der Ausgangsspannung.\\
+  Annahme: Die Signale liegen bereits seit langer Zeit an.\\
+  c)Eingangssignal: $f=1Hz$\\
+  \includegraphics{U_rechteck.png}\\
+  d)Eingangssignal: $f=100Hz$\\
+  \includegraphics{U_rechteck.png}\\
+  e)Eingangssignal: $f=1kHz$\\
+  \includegraphics{U_rechteck.png}\\
+  Gegeben sei folgende Schaltung:\\
+  \includegraphics{Schaltung7.png}\\
+  Die Übertragungsfunktion lautet: $G(s) = \frac{U_{out}(s)}{U_{in}(s)} = \frac{\alpha}{R_1R_2C_1C_2s^2+((R_1+R_2)C_1+(1-\alpha)R_1C_2)s+1}$
+  a) Um welche Filterschaltung handelt es sich ?\\
+  b) Vereinfach Sie die Übertragungsfunktion unter der Annahme , dass die Kondensatoren identisch sind ($C=C_1=C_2$) und die Widerstände in einem festen Verhältnis m stehen ($R_1=mR, R2=R$)\\
+  c) Vereinfach Sie die Übertragungsfunktion unter der Annahme , dass die Kondensatoren und Widerstände jeweils identisch sind ($C=C_1=C_2 R=R_1=R_2$)\\
+  d) Bestimmen sie durch Koeffizientenvergleich die Verstärkung $A_0$, die Eigenfrequenz $f_0$ und die Güte $Q$ des Systems.\\
+  e) Bestimmen sie die Bauteilwerte $C$,$R_1$,$R_2$ für ein Filter mit folgenden Eigenschaften:\\
+  $A_0 = 2,f_0 = 100kHz, Q=0,707$.\\
+  f) Bestimmen Sie die Bauteilwerte $C,R$ sowie $\alpha$ für ein Filter mit folgenden Eigenschaften: 
+  $f_0 = 100kHz, Q=0,5$
+  Verwenden Sie Kondensatoren aus der E12 und Widerstände aus der E24 Reihe.\\
+  g) Skizzieren sie den Amplitudengang und die Sprungantwort des Filters aus e).\\
+  \includegraphics{logpaper.png}\\
+  \includegraphics{normpaper.png}\\
+  h) Skizzieren sie den Amplitudengang und die Sprungantwort des Filters aus f).\\
+  \includegraphics{logpaper.png}\\
+  \includegraphics{normpaper.png}\\
+  Zusatzfrage: Die Verstärkung des Filters soll nun auf $A_0 = 1$ verändert werden. Wie können Sie dies erreichen, ohne das Filter neu berechnen zu müssen? Zeichen sie die Schaltung mit den entsprechenden Modifikationen.
+
+  Gegeben sei folgende Schaltung:\\
+  \includegraphics{Schaltung14.png}\\
+  Die Aussteuergrenzen sollen mit $\pm 5V$ angenommen werden.\\
+  a) Welche Ihnen bekannte Anwendungsschaltung ist hier dargestellt?\\
+  b) Skizzieren sie qualitativ die Potentiale $u_1$ und $u_2$ in ein gemeinsames Diagramm.\\
+  \includegraphics{pot_dia.png}\\
+  c) Dimensionieren sie die Schaltung so, dass das Signal $u_1$ eine Periodendauer von $100 \mu s$ erhält. Verwenden sie Bauteile aus der E12-Reihe.\\
+  d) Berechnen sie die tatsächliche Periodendauer des Signals $u_1$ für die gewählten Bauteile aus der E12-Reihe.\\
+  e) Zeigen Sie, dass die Periodendauer des Ausgangssignals unabhängig von den Aussteuergrenzen des Operationsverstärkers ist?\\
+
+  Gegeben sei folgende Schaltung:\\
+  \includegraphics{Schaltung15.png}\\
+  a) Stellen Sie den Zusammenhang zwischen der Spannung $U_{ref}$ und Periodendauer des Signals $u_2$ auf.\\
+  Hinweis: Das resultierende Signal hat kein 50\% Tastverhältnis. Rechnen sie daher beide Fälle getrennt.\\
+  b) Berechnen sie die Periodendauer und Tastverhältnis für $U_{ref} = 2.5V$.
+  c) Bonusfrage: Die Schaltung wird wie folgt mit einer Diode erweitert:\\
+  \includegraphics{Schaltung16.png}\\
+  Beschreiben sie stichpunktartig den Einfluss der Diode auf die Schaltung und skizieren Sie qualitativ die Form des Signals $u_1$\\
+  Hinweis: $U_{ref}$ kann für die Betrachtung als positiv und konstant angenommen werden.\\
+  \includegraphics{pot_dia.png}
+
+  Ein Tiefpass erster Ordnung soll entworfen werden.
+  a) Zeichnen sie die Schaltung unter Verwendung eines idealen Operationsverstärkers.
+  Bezeichnen sie Ein und Ausgangsspannung, sowie alle verwendeten Bauteile.\\
+  b) Nennen sie die Laplace- Übertragungsfunktion der Schaltung.\\
+  c) Dimensionieren Sie die Schaltung für eine Grenzfrequenz $f_c = 10Hz$, eine Eingangsimpedanz von $20k\Omega$ und einer Gleichspannungsverstärkung von $5$.\\
+  Sie haben Ihrem Kommilitonen, die benötigten Bauteile gegeben und Ihn gebeten die Schaltung für sie zusammenzubauen. 
+  Ihr Kommilitone kommt mit dem Ergebnis seiner "Lötkunst" zurück.
+  Der Aufbau sieht auf den ersten Blick richtig aus, allerdings können Sie die passiven Bauteile aufgrund der Größe nicht unterscheiden. 
+  Da Sie keine Lupe zur Hand haben, müssen Sie sich einen einfachen Test zur Funktionsüberprüfung überlegen.\\
+  d) Zeichnen Sie die (drei) möglichen Schaltungen für die Permutation der Passiven Bauteile.
+  e) Wie können Sie mit einem einfachen Test, die drei Varianten unterscheiden?\\
+  Hinweis: sie benötigen keinen Funktionsgenerator oder Oszilloskop, eine Spannungsquelle und ein Miltimeter sind Ausreichend.\\
+
+
+
 \end{document}
