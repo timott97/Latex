@@ -21,6 +21,7 @@
    -nicht invertierend\\
   Subtrahierer:\\
   Integrierer:\\
+  $U_{out}(t) = -\frac{1}{RC} \int U_{in}(t)$
   Differenzierer:\\
   Strom-Spannungs-Wandler:\\
   Logarithmierer: (Schreibt man das so ?)\\
@@ -68,16 +69,22 @@
   Übertragungsfunktion TP: $\frac{U_a}{U_e} = \frac{\frac{R2}{R1}}{1+sC_1\cdot (\frac{R_3 R_2}{R_1} + R_2 + R3_3) + s^2C_1C_2R_2R_3 }$\\
   Eigenkreisfrequenz: $\omega_0 = \frac{1}{\sqrt{C_1C_2R_2R_3}}$\\
   Q-Faktor: $Q = \frac{1}{\omega_0 (\frac{R_2R_3}{R_1}+R_2+R3)}$\\
-  Amplitudengang: $|A_0(\omega)| = \frac{\frac{R_2}{R_1}}{\sqrt{(1-\frac{\omega}{\omega_0})^2+(2D\frac{\omega}{\omega_o})}}$ (TODO: Testen und Herleiten omega-0 Fraglich)
+  Amplitudengang: $|A_0(\omega)| = \frac{\frac{R_2}{R_1}}{\sqrt{(1-\frac{\omega}{\omega_0})^2+(2D\frac{\omega}{\omega_o})}}$
 
   \addsec {Schaltungen mit Mitkopplung}
   \addsec {nichtinvertierender Komparator}
-  \includegraphics[width=0.33\textwidth]{Komparator.png}
+  \includegraphics[width=0.33\textwidth]{Komparator.png}\\
+  $U_{ref}(1+\frac{R_1}{R_2})-\frac{R_1}{R_2}*U_{out}$
   \addsec {invertierender Komparator}
   \addsec {Fensterkomparator}
   \includegraphics[width=0.33\textwidth]{Fensterkomparator.png}
   \addsec {Rechteck - Dreieckgenerator}
+  \includegraphics[width=0.33\textwidth]{Rechteck_Dreieck_Generator.png}\\
+  Periodendauer: $U_{out}(t) = -\frac{1}{R_3C}\cdot\int U_{in}(t)dt \Rightarrow \frac{T}{2} = -\frac{(U_{out}-U_0)\cdot R_3C}{U_{in}}$\\
+  Schaltschwellen: $U_{ref}(1+\frac{R_1}{R_2})-\frac{R_1}{R_2}*U_{out}$\\
   \addsec {vereinfachter Dreieckgenerator}
+  Halbe Periodendauer: $t_1 = R_3 \cdot C \cdot ln(1+2\frac{R_1}{R_2})$\\
+  Schaltschwellen ($U_{ref} = 0$): $U_{1/2} = \pm \frac{R_1}{R_1+R_2} \cdot U_{A, max}$\\
   \addsec {PWM Generator}
   
 \end{document}
