@@ -1,18 +1,30 @@
 \documentclass[A4]{scrreprt}
 \usepackage[paper=a4paper,left=10mm,right=10mm,top=25mm,bottom=25mm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
 
 \begin{document}
   \addchap{Wärmelehre}
+  \addsec{Grundlagen}
+    Mol: $1 mol = N_A Atome = 6.02\cdot 10^{23} Teilchen$\\
+    Atomar mass unit: $1u = 1.66053 \cdot 10^{-27} kg$\\
+    Größe Atom: $\approx 1\cdot 10^{-10} m$ \\
   \addsec{Thermodynamik Idealer Gase}
     Ideale Gase:\\
+    Boltzmann Konstante: $k_B = 1,38 \cdot 10^{-23} \frac{kg \cdot m^2}{s^2 \cdot K}$\\
+    mittlere quadratische Geschindigkeit: $\frac{1}{2} k_B \cdot T$
+    Abstand von Atomen unter Normaldruck: $5\cdot 10^{-9} m$\\
+    Mittlere Geschwindigkeit: $v = 0 \frac{m}{s}$\\
     Mittlere Kinetische Energie: $E = \frac{3}{2}m_{teilchen}v^2$\\
     Allg. Gasgleichung: $p\cdot V = N \cdot K_B \cdot T$\\
     TODO: $ N = \frac{n}{V}$\\
     Druck: $p = \frac{F}{A}$ \\
+    Druck in einer Flüssigkeit: $p(h) = \rho \cdot h \cdot g$\\
     Gleichverteilungssatz: $E_{kin} = E_{tra} + E{rot} = \frac{f}{2} \cdot K_B \cdot t$\\
-    Barom. Höhenformel: $TODO$\\
+    Barom. Höhenformel: $p(h) = p_0 \cdot e^{-\frac{h}{h_0}}$\\
     Energiesatz: $\Delta U = \Delta Q + \Delta W$\\
     Innere Energie: $U = \frac{f}{2} K_B \cdot T \cdot N$\\
+    Isentropenkoeffizient: $\kappa = 1+ \frac{2}{f}$
     \\ 
     \begin{tabular}{l|l}
     Isotherme Zustandsänderung:&Isochore Zustandsänderung:\\\\
@@ -44,20 +56,28 @@
   Dulong-Petit'sche Regel: $c_K = 3 N_A K_B$\\
   Wärmeausdehnung linear: $\Delta L = \alpha L \Delta T$\\
   Wärmeausdehnung Kubisch: $\Delta V = \beta V \Delta T , \beta = 3\alpha$\\
-  Richmannsche Mischungsregel: TODO
-  Richmannsche Mischungsregel mit Wärmemengen:
+  Richmannsche Mischungsregel: TODO\\
+  Richmannsche Mischungsregel mit Wärmemengen: TODO\\
 
   
-  \addchap{Wellen}
+  \addchap{Wellen und Optik}
   \addsec{Wellengleichung}
   Allg. Wellengleichung:\\
-  Lsg für ebene Wellen im $R^1$: $A_{(x,t)} = A_0\cdot cos(\omega t - k*x_0)$\\
-  $k = \frac{2\pi}{\lambda}$, $\omega = \frac{2\pi}{T}$\\
-  Lsg für ebene Wellen im $R^3$:\\
-  Lsg für Kreiswellen:\\
-  Lsg für Zylinderwellen:\\
-  Lsg für Kugelwellen:\\
+  Lsg für ebene Wellen im $R^1$: $A_{(x,t)} = A_0\cdot cos(\omega t - k*x_0)$, $k = \frac{2\pi}{\lambda}$, $\omega = \frac{2\pi}{T}$\\
+  Lsg für ebene Wellen im $R^3$: \\
+  Lsg für Kreiswellen: $A(x,y,t) = \frac{A_0}{\sqrt{r}}\cdot cos(\omega t - |k|\cdot\sqrt{x^2+y^2})$\\
+  Lsg für Zylinderwellen: \\
+  Lsg für Kugelwellen: $A(x,y,t) = \frac{A_0}{r}\cdot cos(\omega t - |k|\cdot \sqrt{x^2+y^2+z^2})$\\
+  \\
+  Wellenlänge: $\lambda = c\cdot T$\\  
+
   \addsec{Interferenz}
   Interferenz:\\
-     
+
+  \addsec{Doppler Effekt}
+  Quelle ruht, Empfänger bewegt: $f_E = f_Q (1-\frac{v_E}{c})$\\
+  Empfänger ruht, Quelle bewegt: $f_E = f_Q\cdot(\frac{1}{1-\frac{V_Q}{c}})$\\
+
+  \addsec{}
+       
 \end{document}
